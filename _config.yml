@@ -17,16 +17,30 @@ title: Buy Stuff
 email: dansinker@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   .
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+highlighter: rouge
+### exclude the instructions / write-up in the README.md
 
-# Build settings
-markdown: kramdown
-theme: minima
-gems:
-  - jekyll-feed
+
+# Tracker
+
+# Comments
+
+
+#optimization
+#compress.html
+compress_html:
+  clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
+  comments: ["<!-- ", " -->"]
+  endings: [all]
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: []
+
+
+sass:
+ style: compressed
+
 exclude:
-  - Gemfile
-  - Gemfile.lock
+- README.md
