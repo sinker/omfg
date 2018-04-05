@@ -1,0 +1,31 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+<!--   <link href="https://fonts.googleapis.com/css?family=Lato:900|Work+Sans" rel="stylesheet"> -->
+  <meta name="description" content="Hi, I'm Dan.">
+  <link rel="stylesheet" href="https://use.typekit.net/ebs7xub.css">
+  <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
+
+</head>
+<body style="background-color: rgb(255, 255, 255)">
+ <script async src="{{site.baseurl}}/js/theme.min.js"></script>
+  <header>
+      <a href="{{site.baseurl}}/"><div class="home"></div></a>
+  </header>
+
+
+    {{ content }}
+
+
+<footer>
+    <p class="copy"><small>Copyright 2018 by <a href="http://www.twitter.com/dansinker">Dan Sinker</a></small></p>
+</footer>
+{% include analytics.html %}
+</body>
+</html>
